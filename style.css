@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'agright';
+    src: url('agright regular.otf') format('opentype'), url('agright regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.otf') format('opentype');
+}
+
+.fundo{
+    background-image: url('/imagens/Rectangle.png');
+    padding-bottom: 200px;
+}
+
+.estilo{
+    position: absolute;
+    bottom: -800px;
+    right: 350px;
+}
+
+.ajeitando{
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'agright', sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 70px;
+}
+
+.centro{
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.direita{
+    left: 1500px;
+}
+
+.black{
+    color: black;
+}
+
+.row {
+    margin: 0;
+}
+
+.container{
+    padding: 250px 0;
+}
+
+.left{
+    float: left;
+}
+.carousel-size{
+    width: 350px;
+    height: 450px;
+}
+
+.blue{
+    padding: 50px;
+    background-color: rgba(212, 228, 238, 0.288);
+}
+
+.dourado{
+    color: #E1C182;
+    font-size: 50px;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+p, li {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.transparente{
+    border: solid 2px white;
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.container-a{
+    float: left;
+}
+
+.container-b{
+    float: right;
+}
+
+/* Barra de navegação */
+
+header, .navbar {
+    background-color: transparent;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+}
+
+#navbar-links a {
+    color: #FFFFFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+
+/* Eventos */
+
+.card-body {
+    text-align: center;
+}
+
+.redonda {
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+/* Formulário */
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.submit{
+    border: solid 2px black;
+    color: black;
+    background-color: transparent;
+    margin-left: 10px;
+    padding: 15px;
+    padding-left: 190px;
+    padding-right: 180px;
+}
+
+/* Footer */
+
+.img{
+    padding-left: 250px;
+}
+
+hr{
+    color: #FFFFFF;
+    size: 5px;
+}
+
+footer{
+    padding: 50px;
+    background-color: black;
+}
+
+/* Fotos */
+
+
