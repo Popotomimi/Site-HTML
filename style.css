@@ -1,16 +1,22 @@
 @font-face {
     font-family: 'agright';
-    src: url('agright regular.otf') format('opentype'), url('agright regular.ttf') format('truetype');
+    src: url('Fonts/agright regular.otf') format('opentype'), url('Fonts/agright regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Regular.otf') format('opentype');
+    src: url('Fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+main{
+    min-width: 320px;
+    max-width: 1900px;
+    margin: auto;
 }
 
 .fundo{
-    background-image: url('/imagens/Rectangle.png');
+    background-image: url('imagens/Rectangle.png');
     padding-bottom: 200px;
 }
 
@@ -18,6 +24,12 @@
     position: absolute;
     bottom: -800px;
     right: 350px;
+}
+
+.fundo-escuro{
+    background-color: black;
+    border-radius: 50px;
+    border-left: #FFFFFF;
 }
 
 .ajeitando{
@@ -34,14 +46,13 @@ h1{
     font-size: 70px;
 }
 
+
 .centro{
+    background-color: black;
+    border-radius: 50px;
     text-align: center;
     padding-top: 100px;
     padding-left: 100px;
-}
-
-.direita{
-    left: 1500px;
 }
 
 .black{
@@ -53,15 +64,16 @@ h1{
 }
 
 .container{
-    padding: 250px 0;
+    padding: 100px 0;
 }
 
 .left{
     float: left;
 }
+
 .carousel-size{
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 400px;
 }
 
 .blue{
@@ -84,7 +96,7 @@ h1{
 
 p, li {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Montserrat';
 }
 
@@ -92,7 +104,9 @@ p, li {
     border: solid 2px white;
     color: white;
     background-color: transparent;
-    padding: 5px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .container-a{
@@ -112,10 +126,6 @@ header, .navbar {
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
-}
-
-#logo {
-    width: 75px;
 }
 
 .navbar-brand {
@@ -181,4 +191,114 @@ footer{
 
 /* Fotos */
 
+.margin{
+    margin-bottom: 20px;
+}
 
+.largura{
+    display: flex;
+    flex-direction: row;
+    margin-top: -180px;
+}
+
+.cima{
+    bottom: 50px;
+}
+
+.card-size{
+    width: 333px;
+    height: 300px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1228px) {
+
+    h1{
+        font-size: 25px;
+    }
+
+    #logo{
+        width: 80px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .carousel-size{
+        width: 200px;
+        height: 250px;
+    }
+
+    .transparente{
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+    }    
+}
+
+@media (max-width: 770px){
+
+    h1{
+        font-size: 15px;
+    }
+
+    h2{
+        font-size: 10px;
+    }
+
+    p{
+        font-size: 8px;
+    }
+
+    .carousel-size{
+        width: 90px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 1400px) {
+    h4{
+        font-size: 20px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: .4rem .2rem;
+    }
+}
+
+@media (max-width: 375px){
+
+    #logo{
+        width: 50px;
+    }
+
+    main{
+        display: grid;
+    }
+
+    h1{
+        font-size: 10px;
+    }
+
+    p{
+        font-size: 5px;
+    }
+
+    .transparente{
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 8px;
+    } 
+}
