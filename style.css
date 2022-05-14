@@ -34,7 +34,7 @@ main{
 
 .ajeitando{
     margin-left: 100px;
-    margin-top: -100px;
+    margin-top: -70px;
 }
 
 h1, h2, h3, h4{
@@ -46,10 +46,11 @@ h1{
     font-size: 70px;
 }
 
+.text{
+    margin-bottom: 60px;
+}
 
 .centro{
-    background-color: black;
-    border-radius: 50px;
     text-align: center;
     padding-top: 100px;
     padding-left: 100px;
@@ -57,10 +58,6 @@ h1{
 
 .black{
     color: black;
-}
-
-.row {
-    margin: 0;
 }
 
 .container{
@@ -107,14 +104,6 @@ p, li {
     padding: 10px;
     padding-left: 60px;
     padding-right: 60px;
-}
-
-.container-a{
-    float: left;
-}
-
-.container-b{
-    float: right;
 }
 
 /* Barra de navegação */
@@ -212,22 +201,27 @@ footer{
 
 /* Responsividade */
 
-@media (max-width: 1228px) {
+@media(max-width: 1400px){
 
-    h1{
-        font-size: 25px;
+    .tamanho{
+        width: 250px;
+        height: 250px;
+        margin-right: -25px;
     }
 
-    #logo{
-        width: 80px;
+    .largura{
+        display: flexbox;
+        flex-direction: center;
+        margin-top: -150px;
     }
 
-    h2{
-        font-size: 20px;
-    }
+}
 
-    p{
-        font-size: 15px;
+@media(max-width: 1300px){
+    
+    /* Parte inicial */
+    .container{
+        padding: 20px 0;
     }
 
     .carousel-size{
@@ -235,70 +229,394 @@ footer{
         height: 250px;
     }
 
-    .transparente{
-        padding: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 15px;
-    }    
-}
-
-@media (max-width: 770px){
-
     h1{
-        font-size: 15px;
-    }
-
-    h2{
-        font-size: 10px;
+        font-size: 28px;
     }
 
     p{
-        font-size: 8px;
+        font-size: 13px;
     }
 
-    .carousel-size{
-        width: 90px;
-        height: 110px;
+    #logo{
+        width: 100px;
     }
-}
 
-@media (max-width: 1400px) {
+    .transparente{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* Fotos */
+
+    .tamanho{
+        width: 250px;
+        height: 150px;
+        margin-right: -25px;
+    }
+
+    .largura{
+        display: flexbox;
+        flex-direction: center;
+        margin-top: -80px;
+    }
+
+    /* Sobre nós */
+
+    .top {
+        margin-top: 300px;
+    }
+
+    .semi{
+        width: 250px;
+        height: 250px;
+        margin-left: 90px;
+    }
+
+    /* Espaço */
+
     h4{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .text{
-        font-size: 16px;
+        font-size: 13px;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding: .4rem .2rem;
+    .adaptavel{
+        width: justify;
+        height: justify;
+    }
+
+    /* Orçamento */
+
+    .mesa{
+        width: 100%;
+        height: 100%;
+    }
+
+    .paragrafo{
+        font-size: 11px;
+    }
+
+    .dourado{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .direita{
+        font-size: 11px;
+        padding: auto;
+    }
+
+    /* Contato e localização */
+
+    iframe{
+        width: 450px;
+        height: 450px;
+    }
+
+    .submit{
+        padding: 10px;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 15px;
+    }
+
+    .img{
+        padding-left: 150px;
     }
 }
 
-@media (max-width: 375px){
-
-    #logo{
-        width: 50px;
+@media(max-width: 1000px){
+    
+    /* Parte inicial */
+    .container{
+        padding: 0;
+        padding-left: -20px;
+        padding-right: -20px;
     }
 
-    main{
-        display: grid;
+    .carousel-size{
+        width: 100px;
+        height: 150px;
     }
 
-    h1{
-        font-size: 10px;
+    h1, h2{
+        font-size: 20px;
     }
 
     p{
-        font-size: 5px;
+        font-size: 10px;
+    }
+
+    #logo{
+        width: 70px;
     }
 
     .transparente{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    /* Fotos */
+
+    .tamanho{
+        width: 190px;
+        height: 140px;
+        margin-right: -25px;
+    }
+
+    .largura{
+        display: flexbox;
+        flex-direction: center;
+        margin-top: -50px;
+    }
+
+    /* Sobre nós */
+
+    .top {
+        margin-top: 200px;
+    }
+
+    .semi{
+        width: 150px;
+        height: 150px;
+        margin-left: 90px;
+    }
+
+    /* Espaço */
+
+    h4{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .text{
+        font-size: 9px;
+        margin-bottom: 25px;
+    }
+
+    .adaptavel{
+        width: justify;
+        height: justify;
+    }
+
+    /* Eventos */
+
+    .top2{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .events{
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Orçamento */
+
+    .mesa{
+        width: 100%;
+        height: 100%;
+    }
+
+    .paragrafo{
+        font-size: 9px;
+    }
+
+    .dourado{
+        font-size: 18px;
+    }
+    
+    .centro{
+        padding-top: 35px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    .direita{
+        font-size: 9px;
         padding: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 8px;
-    } 
+    }
+
+    /* Contato e localização */
+
+    iframe{
+        width: 350px;
+        height: 350px;
+    }
+
+    .submit{
+        padding: 5px;
+        font-size: 9px;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 15px;
+    }
+
+    .insface{
+        width: 15px;
+    }
+
+    .img{
+        padding-left: 150px;
+    }
+}
+
+@media(max-width: 800px){
+    
+    /* Parte inicial */
+    .container{
+        padding: 0;
+        padding-left: -20px;
+        padding-right: -20px;
+    }
+
+    .carousel-size{
+        width: 130px;
+        height: 130px;
+    }
+
+    h1, h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    #logo{
+        width: 80px;
+    }
+
+    .transparente{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    /* Fotos */
+
+    .tamanho{
+        width: 100px;
+        height: 90px;
+    }
+
+    .col-md-3{
+        display: contents;
+        justify-content: center;
+    }
+
+    .largura{
+        display: flex;
+        flex-direction: row;
+        margin-top: -50px;
+        padding-left: 30px;
+    }
+
+    /* Sobre nós */
+
+    /* Parei aqui */
+    .top {
+        margin-top: 70px;
+        margin-left: 5px;
+    }
+
+    .semi{
+        display: none;
+    }
+
+    /* Espaço */
+
+    h4{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .text{
+        font-size: 9px;
+        margin-bottom: 25px;
+    }
+
+    .adaptavel{
+        width: justify;
+        height: justify;
+    }
+
+    /* Eventos */
+
+    .top2{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .events{
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Orçamento */
+
+    .mesa{
+        width: 100%;
+        height: 100%;
+    }
+
+    .paragrafo{
+        font-size: 9px;
+    }
+
+    .dourado{
+        font-size: 18px;
+    }
+    
+    .centro{
+        padding-top: 35px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    .direita{
+        font-size: 9px;
+        padding: 3px;
+    }
+
+    /* Contato e localização */
+
+    iframe{
+        width: 350px;
+        height: 350px;
+    }
+
+    .submit{
+        padding: 5px;
+        font-size: 9px;
+    }
+
+    /* Footer */
+
+    footer{
+        padding: 15px;
+    }
+
+    .insface{
+        width: 15px;
+    }
+
+    .img{
+        padding-left: 150px;
+    }
 }
